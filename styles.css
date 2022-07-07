@@ -20,13 +20,14 @@ body{
     font-family: 'M PLUS Code Latin', sans-serif;
 }
 
-h1{
+.first-theme{
     margin-top:90px;
     color: #2E4053;
+    width: 100%;
     font-family: 'Bakbak One', cursive;
     font-family: 'Cagliostro', sans-serif;
     font-family: 'M PLUS Code Latin', sans-serif; 
-    
+   
 }
 .logo{
     border-radius: 50%;
@@ -76,12 +77,34 @@ nav ul li a:hover{
     margin-top: 37%;
     margin-left: 5%;
 }
+.div-imag-pharagra{
+    display:flex;
+    flex-direction: row;
+}
+
+.img-section{
+    display:flex;
+    width: 40%;
+    margin-top:2%;
+    border-radius:25px;
+}
+.description{
+    margin-top: 4%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+.tittle-section{
+    margin-top:5%;
+    color: #369aa8;
+    text-align: center;
+}
 
 @media screen and (max-width:1440px){
     .hero-phrase{
         margin-top: 30%;
     }
-    h1{
+    .first-theme{
         margin-top:40px;
     }
 }
@@ -144,7 +167,7 @@ nav ul li a:hover{
         -webkit-text-fill-color: black;
         -webkit-text-stroke: 0.5px;
     }
-    h1{
+    .first-theme{
         margin-top: 10%;
     }
 }
@@ -157,7 +180,7 @@ nav ul li a:hover{
     .nav{
         height: 180px;
     }
-    h1{
+    .first-theme{
         margin-top: 5%;
     }
 }
@@ -184,7 +207,5 @@ nav ul li a:hover{
     .hero-phrase{
         visibility: hidden;
     }
-    h1{
-
-    }
+  
 }
