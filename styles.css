@@ -19,86 +19,97 @@ body{
     font-family: 'Bakbak One', cursive;
     font-family: 'M PLUS Code Latin', sans-serif;
 }
-
-.first-theme{
-    margin-top:90px;
-    color: #2E4053;
-    width: 100%;
-    font-family: 'Bakbak One', cursive;
-    font-family: 'Cagliostro', sans-serif;
-    font-family: 'M PLUS Code Latin', sans-serif; 
-   
-}
-.logo{
-    border-radius: 50%;
-    margin: 10px 10px 10px 10px;
-}
-.nav{
+@media screen and (max-width:2560px){
+    .first-theme{
+        margin-top:100px;
+        color: #2E4053;
+        width: 100%;
+        font-family: 'Bakbak One', cursive;
+        font-family: 'Cagliostro', sans-serif;
+        font-family: 'M PLUS Code Latin', sans-serif; 
+       
+    }
+    .logo{
+        border-radius: 50%;
+        margin: 10px 10px 10px 10px;
+    }
+    .nav{
+        
+        font-family: 'Bakbak One', cursive;
+        height: 150px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background:#369AA8 ;
+    }
+    .underList{
+        width: 65%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+       align-items: center;
+       
+    }
     
-    font-family: 'Bakbak One', cursive;
-    height: 150px;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background:#369AA8 ;
-}
-.underList{
-    width: 65%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-   align-items: center;
-   
+    nav ul li a{
+        color: antiquewhite;
+        height: 100%;
+        font-size: 18px;
+    }
+    
+    nav ul li a:hover{
+        color: black;
+    }
+    
+    .hero{
+        width: 80%;
+        position: absolute;
+    }
+    
+    .hero-phrase{
+        width: 60%;
+        position: relative;
+        font-family: 'Bakbak One', cursive; 
+        font-family: 'M PLUS Code Latin', sans-serif;
+        font-size: 25px;
+            -webkit-text-fill-color: white;
+            -webkit-text-stroke: 1.2px;
+        margin-top: 37%;
+        margin-left: 5%;
+    }
+    
+    .div-imag-pharagra{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .img-section{
+        display:flex;
+        width: 35%;
+        border-radius:10%;  
+        
+    }
+    
+    .tittle-section{
+        margin-top:0%;
+        color: #369aa8;
+        text-align: center;
+    }
+    
+    .description{
+         margin-left: 2%;
+        margin-right: 2%;
+        width: 50%;
+        -webkit-box-shadow: 5px 5px 15px 5px #2E4053; 
+        box-shadow: 5px 5px 15px 5px #2E4053;
+        border-radius:10px;
+    }
+    
 }
 
-nav ul li a{
-    color: antiquewhite;
-    height: 100%;
-    font-size: 18px;
-}
-
-nav ul li a:hover{
-    color: black;
-}
-
-.hero{
-    width: 80%;
-    position: absolute;
-}
-
-.hero-phrase{
-    width: 60%;
-    position: relative;
-    font-family: 'Bakbak One', cursive; 
-    font-family: 'M PLUS Code Latin', sans-serif;
-    font-size: 25px;
-        -webkit-text-fill-color: white;
-        -webkit-text-stroke: 1.2px;
-    margin-top: 37%;
-    margin-left: 5%;
-}
-.div-imag-pharagra{
-    display:flex;
-    flex-direction: row;
-}
-
-.img-section{
-    display:flex;
-    width: 40%;
-    margin-top:2%;
-    border-radius:25px;
-}
-.description{
-    margin-top: 4%;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 2%;
-}
-.tittle-section{
-    margin-top:5%;
-    color: #369aa8;
-    text-align: center;
-}
 
 @media screen and (max-width:1440px){
     .hero-phrase{
@@ -107,23 +118,25 @@ nav ul li a:hover{
     .first-theme{
         margin-top:40px;
     }
+
+
 }
 
-
-@media screen and (max-width:1024px) {
-    .logo{
-        border-radius: 50%;
-        width: 15%;
-    }
-
+@media screen and (max-width:1024px){
     .nav{
         display:flex;
         flex-direction: row;
         justify-content: space-around;
         background:#369AA8 ;
+        align-items: center;
+        
     }
-    
-
+    .logo{
+        border-radius: 50%;
+        margin-left: 20px;
+        width: 90px;
+        height: 90px;
+    }
     .underList{
         width: 60%;
         display: flex;
@@ -132,32 +145,42 @@ nav ul li a:hover{
         justify-content: space-around;
        align-items: center;
     }
-
-  nav ul li {
+    nav ul li {
         margin: 5px;
     }
-
-}
-
-@media screen and (max-width:1024px){
-    .nav{
-        align-items: center;
-        justify-content: space-around;
-    }
-    .logo{
-        border-radius: 50%;
-        margin-left: 20px;
-        width: 90px;
-        height: 90px;
-    }
+    
     .hero-phrase{
         margin-top:20% ;
+    }
+
+    .img-section{
+        width: 40%;
+    }
+    .description{
+        font-size: 16px;
+        margin-top: 20px;
+        height: 184px ;
+        overflow:scroll;
     }
 }
 @media screen and (max-width:768px){
     .hero-phrase{
         margin-top:2% ;
     }
+    .div-imag-pharagra{
+        display: flex;
+        align-items: center;
+       
+    }
+    .img-section{
+        height: 50%;
+    }
+    .description{
+        height: 102px;
+        overflow:scroll;
+        font-size: 12px;
+    }
+  
 }
 @media screen and (max-width:425px){
     .hero-phrase{
@@ -170,6 +193,7 @@ nav ul li a:hover{
     .first-theme{
         margin-top: 10%;
     }
+    
 }
 @media screen and (max-width:375px){
     .hero-phrase{
